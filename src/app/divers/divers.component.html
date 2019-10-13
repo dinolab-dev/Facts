@@ -1,0 +1,35 @@
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+    <div class="my-auto">
+        <h1 class="mb-0">Faits
+            <span class="text-primary">Divers </span>
+        </h1>
+        <div class="subheading">Des faits divers sur tout et rien</div>
+        <form class="form-inline mb-5" name="formulaireDivers" (ngSubmit)="chercher()">
+            <select class="form-control mb-2 mr-sm-2" [(ngModel)]="type" name="type"
+                (change)="onTypeChange($event.target.value)">
+                <option value="trivia">Tout</option>
+                <option value="math">Chiffres</option>
+                <option value="date">Dates</option>
+                <option value="year">Années</option>
+            </select>
+            <button type="submit" class="btn btn-primary mb-2"><i class="fa fa-bolt"></i></button>
+        </form>
+        <div *ngIf="!loaded" class="my-spinner">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <p *ngIf="loaded" class="lead mb-5"><i class="fa fa-quote-left"></i>{{ donnees.text }}</p>
+    </div>
+</section>
