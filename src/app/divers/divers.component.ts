@@ -3,8 +3,7 @@ import { NumbersApiService } from '../numbers-api.service';
 
 @Component({
   selector: 'app-divers',
-  templateUrl: './divers.component.html',
-  styleUrls: ['./divers.component.css']
+  templateUrl: './divers.component.html'
 })
 export class DiversComponent implements OnInit {
 
@@ -33,7 +32,7 @@ export class DiversComponent implements OnInit {
     this.chargerDonnees(this.type);
   }
 
-  onMTypeChange(m) {
+  onTypeChange(m) {
     this.chargerDonnees(m);
   }
 

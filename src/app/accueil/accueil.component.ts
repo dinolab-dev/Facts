@@ -3,12 +3,11 @@ import { NumbersApiService } from '../numbers-api.service';
 
 @Component({
   selector: 'app-accueil',
-  templateUrl: './accueil.component.html',
-  styleUrls: ['./accueil.component.css']
+  templateUrl: './accueil.component.html'
 })
 export class AccueilComponent implements OnInit {
 
-  donnees: string;
+  donnees: any;
   loaded: boolean = false;
 
   constructor(private service: NumbersApiService) {}

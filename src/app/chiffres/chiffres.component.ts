@@ -3,8 +3,7 @@ import { NumbersApiService } from '../numbers-api.service';
 
 @Component({
   selector: 'app-chiffres',
-  templateUrl: './chiffres.component.html',
-  styleUrls: ['./chiffres.component.css']
+  templateUrl: './chiffres.component.html'
 })
 export class ChiffresComponent implements OnInit {
 

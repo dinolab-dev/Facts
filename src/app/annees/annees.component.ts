@@ -3,8 +3,7 @@ import { NumbersApiService } from '../numbers-api.service';
 
 @Component({
   selector: 'app-annees',
-  templateUrl: './annees.component.html',
-  styleUrls: ['./annees.component.css']
+  templateUrl: './annees.component.html'
 })
 export class AnneesComponent implements OnInit {
 
